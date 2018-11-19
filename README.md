@@ -11,10 +11,9 @@ Clarke, G.K.C., & Hambrey, M.J. 2019. Structural evolution during cyclic glacier
   
 No plots or run output are contained in this repository so it is necessary to run the various programs to generate output and plot files for each model considered. Depending on the model selected, the archived output for a single model run is roughly 250 GB and the run times will exceed 24 hours on a conventional workstation.
 
-The subdirectories  ./Archive-Traplike_1.00Ref,  ./Archive-Trapridge_1.00Ref, etc
-refer to models 'Traplike_1.00Ref', 'Trapridge_1.00Ref', etc. and contain data files relevant to the particular model. For example, the mass balance forcing (e.g., b_dot_v2016-09-10.mat), sliding mask (e.g., sliding_mask_and_surge_axis_v2016-09-10.mat), bed surface digital elevation model (e.g.,Traplike_BS_dem_v2016-09-09.mat). The file SiteList.dat provides information about measurement sites (actual or imagined, including sites within the body of the glacier). The file SourceList.dat gives information about the location of surface inputs for rock debris (this is used in the medial moraine model). The file PlotList.dat contains information used by the plotting scripts (e.g., which sites to plot and whether hardcopy PDF output is desired).
+The subdirectories  ./Archive-Traplike_1.00Ref,  ./Archive-Trapridge_1.00Ref, etc. refer to models 'Traplike_1.00Ref', 'Trapridge_1.00Ref', etc. and contain data files relevant to the particular model. For example, the mass balance forcing (e.g., b_dot_v2016-09-10.mat), sliding mask (e.g., sliding_mask_and_surge_axis_v2016-09-10.mat), bed surface digital elevation model (e.g.,Traplike_BS_dem_v2016-09-09.mat). The file SiteList.dat provides information about measurement sites (actual or imagined, including sites within the body of the glacier). The file SourceList.dat gives information about the location of surface inputs for rock debris (this is used in the medial moraine model). The file PlotList.dat contains information used by the plotting scripts (e.g., which sites to plot and whether hardcopy PDF output is desired).
 
-Within the top directory of the repository (i.e., the same directory as for this README.md file) are data files for each of the models, for example, Traplike_1.00Ref.dat, Traplike_1.00NoSurge.dat, Trapridge_1.00Ref, etc.
+Within the top directory of the repository (i.e., the same directory as for this README.md file) are data files for launching each of the models, for example, Traplike_1.00Ref.dat, Traplike_1.00NoSurge.dat, Trapridge_1.00Ref, etc.
 
 Getting started:
 
