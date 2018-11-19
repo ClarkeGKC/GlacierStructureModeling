@@ -28,7 +28,7 @@ nice -n 20 matlab -nodesktop
 
 BATCH_run('Traplike_1.00Ref')
                          
-Note the BATCH_run will take several days to complete. First the forward model is run. Following completion of the forward modeling run: particle tracking and medial moraine generation are computationally intensive 
+Note the BATCH_run will take several days to complete. First the forward model is run. Once the snapshots from the forward modeling run have been generated, particle tracking and medial moraine generation runs are launched. These are computationally intensive. 
                         
 Results of bottom-up particle tracking are stored in the file UP_TRACKS.mat within the Archive-xxx subdirectory
 Results of top-down particle tracking are stored in the file DOWN_TRACKS.mat in the same Archive-xxx subdirectory
