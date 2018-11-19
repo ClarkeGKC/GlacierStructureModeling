@@ -25,6 +25,7 @@ To launch a batch run select the desired model, e.g.,'Traplike_1.00Ref'  and ent
 Inside a terminal:        
 
 nice -n 20 matlab -nodesktop
+
 BATCH_run('Traplike_1.00Ref')
                          
 Note the BATCH_run will take several days to complete. First the forward model is run. Following completion of the forward modeling run: particle tracking and medial moraine generation are computationally intensive 
