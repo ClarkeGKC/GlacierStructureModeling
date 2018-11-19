@@ -18,7 +18,7 @@ Within the top directory of the repository (i.e., the same directory as for this
 
 Getting started:
 
-You can run any given model using the BATCH_run.dat file which calls a series of "main" programs starting with "main" which runs the thermomechanical ice dynamics file and stores run snapshots at 0.01 year intervals for a single surge cycle. These snapshots are stored in the subdirectories ./Snapshots with the ./Archive-xxx   subdirectories. Next bottom-up and top-down particle tracking are performed, etc.
+You can run any given model using the BATCH_run.dat file which calls a series of "main" programs starting with "main" which runs the thermomechanical ice dynamics model and stores run snapshots at 0.01 year intervals for a single 50-year surge cycle. These snapshots are stored in the subdirectories ./Snapshots within the ./Archive-xxx   subdirectories. Next bottom-up and top-down particle tracking are performed, etc.
 
 To launch a batch run select the desired model, e.g.,'Traplike_1.00Ref'  and enter BATCH_run('Traplike_1.00Ref') at the MATLAB prompt. I usually choose to do these runs as background jobs so in Linux here is how one might proceed:
 
