@@ -1,0 +1,16 @@
+CrackModelText       = 'Crack model 17 July 2018'
+CRACK_BIN_DEF        = 'Hambrey'
+BLANKING_RULE        = 4
+CRACK_RULE           = 9
+CrackString{1}       = 'Extensional strain-rate threshold'
+CrackString{2}       = 'Extensional stress threshold'
+CrackString{3}       = 'Stress intensity K* threshold'
+CrackString{4}       = 'Stress intensity K*(f_0) threshold'
+CrackString{5}       = 'Stress intensity K*(f) threshold'
+CrackString{9}       = 'Nye crack rule'
+K_threshold          = 200e3
+f_min                = 0
+f_max                = 0.9
+min_cos_n_S          = 0.9
+
+     

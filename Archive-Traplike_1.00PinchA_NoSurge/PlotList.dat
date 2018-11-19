@@ -1,0 +1,392 @@
+% Site map
+
+Map.Sites.Filter                = {'XI=1.00 map', 'Profile N3', 'Profile N2', 'Profile N1', 'Profile C', 'Profile S1', 'Profile S2', 'Profile S3'}
+Map.Sites.XI                    = 1.00
+Map.Sites.HighlightList         = {'E1N3', 'E1N2', 'E1N1', 'E1C', 'E1S1', 'E1S2', 'E1S3',   'E2N3', 'E2N2', 'E2N1', 'E2C', 'E2S1', 'E2S2', 'E2S3',    'E3N3', 'E3N2', 'E3N1', 'E3C', 'E3S1', 'E3S2', 'E3S3'}
+Map.Sites.HighlightMarkerSize   = 6
+Map.Sites.DefaultMarkerSize     = 7
+Map.Sites.NoPlotList            = {'E5N3', 'E5S3'}
+Map.Sites.Gray                  = [0.75 0.75 0.75]
+Map.Sites.PlotELA               = 1
+Map.Sites.x_label               = 'Easting (m)'
+Map.Sites.y_label               = 'Northing (m)'
+Map.Sites.x_W                   = 1000
+Map.Sites.x_E                   = 3500
+Map.Sites.HARDCOPY              = 1
+
+% Depositional ages of sites (no plots)
+
+Map.DepositionalAges.Filter     = 'Profile C'
+
+% Moraine track maps
+
+Map.Moraine(1).ScaleBar         = 1
+Map.Moraine(1).PlotSources      = 1
+Map.Moraine(1).PlotSites        = 0
+Map.Moraine(1).PlotELA          = 1
+Map.Moraine(1).SourceList       = [7 8 9]
+Map.Moraine(1).PlotYearList     = [1965 1975 1985 1995 1998 2005 2006.6]
+Map.Moraine(1).Gray             = [0.75 0.75 0.75]
+Map.Moraine(1).x_label          = 'Easting (m)'
+Map.Moraine(1).y_label          = 'Northing (m)'
+Map.Moraine(1).x_W              = 1000              
+Map.Moraine(1).x_E              = 3500
+Map.Moraine(1).y_S              =  180
+Map.Moraine(1).y_N              = 1500
+Map.Moraine(1).HARDCOPY         = 1
+
+Map.Moraine(2).ScaleBar         = 0
+Map.Moraine(2).PlotSources      = 0
+Map.Moraine(2).PlotSites        = 0
+Map.Moraine(2).PlotELA          = 0
+Map.Moraine(2).SourceList       = [7 8 9]
+Map.Moraine(2).PlotYearList     = [1965 1975 1985 1995 1998 2005 2006.6]
+Map.Moraine(2).Gray             = [0.75 0.75 0.75]
+Map.Moraine(2).x_label          = 'Easting (m)'
+Map.Moraine(2).y_label          = 'Northing (m)'
+Map.Moraine(2).x_W              = 1750
+Map.Moraine(2).x_E              = 3350
+Map.Moraine(2).y_S              =  455
+Map.Moraine(2).y_N              = 1250
+Map.Moraine(2).HARDCOPY         = 1
+
+% Map of energy dissipation
+
+Map.Power.PlotYearList      = [1955 1985 1986 1987 1988 1990 1995 2000 2005]
+Map.Power.PhiMax_mW         = 500;
+Map.Power.Gray              = [0.75 0.75 0.75]
+Map.Power.xlabel            = 'Easting (m)'
+Map.Power.ylabel            = 'Northing (m)'
+Map.Power.x_W               = 1000              
+Map.Power.x_E               = 3500
+Map.Power.y_S               =  180
+Map.Power.y_N               = 1500
+Map.Power.title             = 'Model'
+Map.Power.YearPlot          = 1
+Map.Power.HARDCOPY          = 1
+
+% Map of S_0 foliation
+
+Map.t_d(1).ContourLevels      = 1600:10:2005
+Map.t_d(1).ThickLineLevels    = 1800:50:2005   
+Map.t_d(1).ContourColors      = 0
+Map.t_d(1).DefaultLineWidth   = 0.2
+Map.t_d(1).ThickLineWidth     = 2   
+Map.t_d(1).PlotSites          = 0
+Map.t_d(1).LabelSites         = 0
+Map.t_d(1).ShadedBackground   = [0.75 0.75 0.75]
+Map.t_d(1).xlabel             = 'Easting (m)'
+Map.t_d(1).ylabel             = 'Northing (m)'
+Map.t_d(1).title              = 'Isochronal horizons'
+Map.t_d(1).x_W                = 1000              
+Map.t_d(1).x_E                = 3500
+Map.t_d(1).y_N                = 1500
+Map.t_d(1).y_S                =  180
+Map.t_d(1).HARDCOPY           = 1
+
+% Map of surface velocity
+
+Map.v_surf(1).SnapshotTime       = 1985
+Map.v_surf(1).w_ContourLevels    = 0 : 0.05 : 5
+Map.v_surf(1).ShadedBackground   = [0.75 0.75 0.75]
+Map.v_surf(1).MoraineYear        = 1985
+Map.v_surf(1).MoraineSourceName  = '3L'
+Map.v_surf(1).xlabel             = 'Easting (m)'
+Map.v_surf(1).ylabel             = 'Northing (m)'
+Map.v_surf(1).title              = 'Surface velocity map'
+Map.v_surf(1).x_W                = 1750              
+Map.v_surf(1).x_E                = 3500
+Map.v_surf(1).y_N                = 1500
+Map.v_surf(1).y_S                =  180
+Map.v_surf(1).HARDCOPY           = 1
+
+% Strain axes maps
+
+Map.StrainAxes(1).Filter      = 'XI=1.00 map'
+Map.StrainAxes(1).NoPlotList  = {}
+Map.StrainAxes(1).R_factor    = 25
+Map.StrainAxes(1).MarkerSize  = 4
+Map.StrainAxes(1).Gray        = [0.75 0.75 0.75]
+Map.StrainAxes(1).xlabel      = 'Easting (m)'
+Map.StrainAxes(1).ylabel      = 'Northing (m)'
+Map.StrainAxes(1).title       = 'Major and semi-major strain axes map'
+Map.StrainAxes(1).HARDCOPY    = 1
+
+% Strain foliation plane maps
+
+Map.StrainFoliation(1).Filter     = 'XI=1.00 map'
+Map.StrainFoliation(1).NoPlotList = {}
+Map.StrainFoliation(1).PlotSources = 0
+Map.StrainFoliation(1).R_factor   = 50
+Map.StrainFoliation(1).Ratio      = 0.3
+Map.StrainFoliation(1).SiteMarkerSize = 8
+Map.StrainFoliation(1).TextSize   = 8
+Map.StrainFoliation(1).EllipsoidTextSize = 8
+Map.StrainFoliation(1).Gray       = [0.75 0.75 0.75]
+Map.StrainFoliation(1).xlabel     = 'Easting (m)'
+Map.StrainFoliation(1).ylabel     = 'Northing (m)'
+Map.StrainFoliation(1).title      = 'Strain foliation map'
+Map.StrainFoliation(1).x_W        = 1000           
+Map.StrainFoliation(1).x_E        = 3500
+Map.StrainFoliation(1).y_S        =  180
+Map.StrainFoliation(1).y_N        = 1500
+Map.StrainFoliation(1).HARDCOPY   = 1
+
+Map.StrainFoliation(2).Filter     = 'XI=1.00 map'
+Map.StrainFoliation(2).NoPlotList = {}
+Map.StrainFoliation(2).PlotSources = 1
+Map.StrainFoliation(2).R_factor   = 50
+Map.StrainFoliation(2).Ratio      = 0.3
+Map.StrainFoliation(2).SiteMarkerSize = 8
+Map.StrainFoliation(2).TextSize   = 8
+Map.StrainFoliation(2).EllipsoidTextSize = 8
+Map.StrainFoliation(2).Gray       = [0.75 0.75 0.75]
+Map.StrainFoliation(2).xlabel     = 'Easting (m)'
+Map.StrainFoliation(2).ylabel     = 'Northing (m)'
+Map.StrainFoliation(2).title      = 'Strain foliation map'
+Map.StrainFoliation(2).x_W        =  500              
+Map.StrainFoliation(2).x_E        = 3500
+Map.StrainFoliation(2).y_N        = 1600
+Map.StrainFoliation(2).y_S        =   80
+Map.StrainFoliation(2).HARDCOPY   = 1
+
+% Strain foliation measurement site map
+
+Map.StrainFoliationSites.Filter    = {}
+Map.StrainFoliationSites.XI        = 1
+Map.StrainFoliationSites.PlotSites = 1
+Map.StrainFoliationSites.Gray      = [0.75 0.75 0.75]
+Map.StrainFoliationSites.x_label   = 'Easting (m)'
+Map.StrainFoliationSites.y_label   = 'Northing (m)'
+Map.StrainFoliationSites.title     = 'S_1 sites: Traplike_1.00PinchA_NoSurge'
+Map.StrainFoliationSites.x_W       = 1000
+Map.StrainFoliationSites.x_E       = 3500
+Map.StrainFoliationSites.y_S       =  180
+Map.StrainFoliationSites.y_N       = 1500
+Map.StrainFoliationSites.Color_1   = [0 0 0];
+Map.StrainFoliationSites.Color_2   = [1 1 0];
+Map.StrainFoliationSites.Color_3   = [0 1 0];
+Map.StrainFoliationSites.Color_4   = [1 0 0];
+Map.StrainFoliationSites.HARDCOPY  = 1
+
+% Strain ellipsoid maps
+
+Map.Strain(1).Filter          = 'XI=1.00 map'
+Map.Strain(1).NoPlotList      = {}
+Map.Strain(1).R_factor        = 5
+Map.Strain(1).MarkerTimeStep  = 2
+Map.Strain(1).Gray            = [0.75 0.75 0.75]
+Map.Strain(1).xlabel          = 'Easting (m)'
+Map.Strain(1).ylabel          = 'Northing (m)'
+Map.Strain(1).title           = 'Strain ellipsoid map'
+Map.Strain(1).HARDCOPY        = 1
+
+% Particle track maps and profiles
+
+Map.Tracks.PlotList           = {'E2S3', 'E3N3'}
+Map.Tracks.MarkerYearList     = 1800:10:2000
+Map.Tracks.ThinLineWidth      = 0.75
+Map.Tracks.FatLineWidth       = 1.50    
+Map.Tracks.MarkerSize         = 7
+Map.Tracks.HashLength         = 40
+Map.Tracks.VertHashLength     = 0.01
+Map.Tracks.StressSamplingInterval = 2
+Map.Tracks.Gray               = [0.75 0.75 0.75]
+Map.Tracks.xlabel             = 'Easting (m)'
+Map.Tracks.ylabel             = 'Northing (m)'
+Map.Tracks.XI_label           = '\xi=(z-B)/H'  
+Map.Tracks.title              = 'Particle tracks'
+Map.Tracks.XI_min             = 0.7
+Map.Tracks.PlotSurges         = 1
+Map.Tracks.PlotCracks         = 1;
+Map.Tracks.x_W                = 500
+Map.Tracks.x_E                = 3500
+Map.Tracks.y_S                =  180
+Map.Tracks.y_N                = 1500
+Map.Tracks.HARDCOPY           = 1
+
+% Strain ellipsoid parameters (no plots)
+
+Ellipsoid.Strain.Filter       = {}
+Ellipsoid.Strain.XI           = 1.00
+  
+% Strain ellipsoid cross-sections
+
+Section.Strain(1).Filter      = 'Cross-section E1'
+Section.Strain(1).NoPlotList  = {}
+Section.Strain(1).x_plot_axis = [0 1 0]
+Section.Strain(1).y_plot_axis = [0 0 1]
+Section.Strain(1).Origin      = [1770 840 0]
+Section.Strain(1).R_factor    = 0.005
+Section.Strain(1).xlabel      = 'Easting (m)'
+Section.Strain(1).ylabel      = '\xi=(z-B)/H'
+Section.Strain(1).title       = {'Strain ellipsoids', 'Cross section E1'}
+Section.Strain(1).HARDCOPY    = 1
+
+Section.Strain(2).Filter      = 'Cross-section E2'
+Section.Strain(2).NoPlotList  = {}
+Section.Strain(2).x_plot_axis = [0 1 0]
+Section.Strain(2).y_plot_axis = [0 0 1]
+Section.Strain(2).Origin      = [2070 840 0]
+Section.Strain(2).R_factor    = 0.05
+Section.Strain(2).xlabel      = 'Northing (m)'
+Section.Strain(2).ylabel      = '\xi=(z-B)/H'
+Section.Strain(2).title       = {'Strain ellipsoids', 'Cross section E2'}
+Section.Strain(2).HARDCOPY    = 1
+
+Section.Strain(3).Filter      = 'Cross-section E3'
+Section.Strain(3).NoPlotList  = {}
+Section.Strain(3).x_plot_axis = [0 1 0]
+Section.Strain(3).y_plot_axis = [0 0 1]
+Section.Strain(3).Origin      = [2370 840 0]
+Section.Strain(3).R_factor    = 0.05
+Section.Strain(3).xlabel      = 'Northing (m)'
+Section.Strain(3).ylabel      = '\xi=(z-B)/H'
+Section.Strain(3).title       = {'Strain ellipsoids', 'Cross section E3'}
+Section.Strain(3).HARDCOPY    = 1
+
+% Strain ellipsoid longitudinal profiles
+
+Profile.Strain(1).Filter      = 'Profile C'
+Profile.Strain(1).NoPlotList  = {}
+Profile.Strain(1).x_plot_axis = [1 0 0]
+Profile.Strain(1).y_plot_axis = [0 0 1]
+Profile.Strain(1).Origin      = [2070 840 0]
+Profile.Strain(1).R_factor    = 0.01
+Profile.Strain(1).xlabel      = 'Easting (m)'
+Profile.Strain(1).ylabel      = '\xi=(z-B)/H'
+Profile.Strain(1).title       = {'Strain ellipsoids', 'Longitudinal profile C'}
+Profile.Strain(1).HARDCOPY    = 1
+
+Profile.Strain(2).Filter      = 'Profile N1'
+Profile.Strain(2).NoPlotList  = {}
+Profile.Strain(2).x_plot_axis = [1 0 0]
+Profile.Strain(2).y_plot_axis = [0 0 1]
+Profile.Strain(2).Origin      = [2070 930 0]
+Profile.Strain(2).R_factor    = 0.01
+Profile.Strain(2).xlabel      = 'Easting (m)'
+Profile.Strain(2).ylabel      = '\xi=(z-B)/H'
+Profile.Strain(2).title       = {'Strain ellipsoids', 'Longitudinal profile N1'}
+Profile.Strain(2).HARDCOPY    = 1
+
+% Profile of surface velocity
+
+Profile.v_surf(1).SnapshotTime       = 1985
+Profile.v_surf(1).MoraineSourceName  = '3L'
+Profile.v_surf(1).xlabel             = 'Easting (m)'
+Profile.v_surf(1).title              = 'Surface velocity map'
+Profile.v_surf(1).x_W                = 1750              
+Profile.v_surf(1).x_E                = 3500
+Profile.v_surf(1).y_profile          = 1500
+Profile.v_surf(1).y_S                = 1000
+Profile.v_surv(1).y_N                = 1000
+Profile.v_surf(1).HARDCOPY           = 1
+
+% Folding parameter longitudinal profiles
+
+Profile.FoldingParameter(1).Filter      = 'Profile C'
+Profile.FoldingParameter(1).NoPlotList  = {}
+Profile.FoldingParameter(1).Parameter   = {'JJ(2)', 'JJ(4)', 'JJ(7)'}
+Profile.FoldingParameter(1).cmin        = -2.5
+Profile.FoldingParameter(1).cmax        = +2.5
+Profile.FoldingParameter(1).x_plot_axis = [1 0 0]
+Profile.FoldingParameter(1).y_plot_axis = [0 0 1]
+Profile.FoldingParameter(1).Origin      = [2070 840 0]
+Profile.FoldingParameter(1).Gray         = [0.75 0.75 0.75]
+Profile.FoldingParameter(1).FillContours = 1
+Profile.FoldingParameter(1).ContourLevels = 11
+Profile.FoldingParameter(1).ContourLineStyle = '-'
+Profile.FoldingParameter(1).xlabel      = 'Easting (m)'
+Profile.FoldingParameter(1).ylabel      = 'Elevation (m)'
+Profile.FoldingParameter(1).title       = 'Longitudinal profile C'
+Profile.FoldingParameter(1).HARDCOPY    = 1
+
+Profile.FoldingParameter(2).Filter      = 'Profile N1'
+Profile.FoldingParameter(2).NoPlotList  = {}
+Profile.FoldingParameter(2).Parameter   = {'JJ(2)', 'JJ(4)', 'JJ(7)'}
+Profile.FoldingParameter(1).cmin        = -2.5
+Profile.FoldingParameter(1).cmax        = +2.5
+Profile.FoldingParameter(2).x_plot_axis = [1 0 0]
+Profile.FoldingParameter(2).y_plot_axis = [0 0 1]
+Profile.FoldingParameter(2).Origin      = [2070 930 0]
+Profile.FoldingParameter(2).Gray         = [0.75 0.75 0.75]
+Profile.FoldingParameter(2).FillContours = 1
+Profile.FoldingParameter(2).ContourLevels = 11
+Profile.FoldingParameter(2).ContourLineStyle = '-'
+Profile.FoldingParameter(2).xlabel      = 'Easting (m)'
+Profile.FoldingParameter(2).ylabel      = 'Elevation (m)'
+Profile.FoldingParameter(2).title       = 'Longitudinal profile N1'
+Profile.FoldingParameter(2).HARDCOPY    = 1
+
+% Director maps
+
+Map.Director(1).Filter        = 'XI=1.00 map'
+Map.Director(1).NoPlotList    = {}
+Map.Director(1).Azimuth       = 90
+Map.Director(1).L_factor      = 50;
+Map.Director(1).Gray          = [0.75 0.75 0.75]
+Map.Director(1).xlabel        = 'Easting (m)'
+Map.Director(1).ylabel        = 'Northing (m)'
+Map.Director(1).title         = 'Director map'
+Map.Director(1).x_W           =  500              
+Map.Director(1).x_E           = 3500
+Map.Director(1).y_N           = 1600
+Map.Director(1).y_S           =   80
+Map.Director(1).HARDCOPY      = 1
+
+% Crack density table and chart
+
+Density.Crack(1).Filter        = 'XI=1.00 map'
+Density.Crack(1).NoPlotList    = {}
+Density.Crack(1).TransBarColor = [0.40 0.40 0.40]
+Density.Crack(1).LongBarColor  = [0.70 0.70 0.70]
+Density.Crack(1).DiagBarColor  = [0.90 0.90 0.90]
+Density.Crack(1).HARDCOPY      =  1
+
+% Stereoplots of crack data
+
+Stereo.Crack(1).Filter       = 'XI=1.00 map'
+Stereo.Crack(1).NoPlotList   = {}
+Stereo.Crack(1).HARDCOPY     = 1
+
+% Stereoplots of S2 data
+
+Stereo.S2.PlotList           = {'E4C', 'E4.5C', 'E5N2', 'E5N1', 'E5C', 'E5S1', 'E5S2'}
+Stereo.S2.Gray               = [0.75 0.75 0.75]
+Stereo.S2.xlabel             = 'Easting (m)'
+Stereo.S2.ylabel             = 'Northing (m)'
+Stereo.S2.title              = 'Strain foliation map'
+Stereo.S2.x_W                = 2200              
+Stereo.S2.x_E                = 3500
+Stereo.S2.y_N                = 1400
+Stereo.S2.y_S                =  280
+Stereo.S2.HARDCOPY           = 1
+
+% Crack occurrence time series
+
+TimeSeries.Crack.Filter = 'XI=1.00 map'
+TimeSeries.Crack.NoPlotList = {'E1S3', 'E1S2', 'E1S1', 'E2S3', 'E2S2', 'E2S1','E3S3', 'E3S2', 'E3S1'}
+TimeSeries.Crack.t_MIN      = 1950.6
+TimeSeries.Crack.t_MAX      = 2006.6
+TimeSeries.Crack.BinWidth   = 1;
+TimeSeries.Crack.xlabel     = 'Year'
+TimeSeries.Crack.ylabel     = 'Count'
+TimeSeries.Crack.title      = {'Crack count for all sites', 'Crack counts for each site'}
+TimeSeries.Crack.Legend     = 1
+TimeSeries.Crack.HARDCOPY   = 1
+
+% Time series of energy dissipation
+
+TimeSeries.Power.t_MIN      = 1955.0
+TimeSeries.Power.t_MAX      = 2005.0
+TimeSeries.Power.dt_PLOT    = 0.1
+TimeSeries.Power.xlabel     = 'Year'
+TimeSeries.Power.ylabel_L1  = 'Power (W)'
+TimeSeries.Power.ylabel_L2  = 'Power density (w m^3)'
+TimeSeries.Power.ylabel_R1  = 'Rate of area change (m^2 yr^{-1})'
+TimeSeries.Power.ylabel_R2  = 'Rate of area change (m^2 yr^{-1})'
+TimeSeries.Power.title      = 'Model'
+TimeSeries.Power.Legend     = 1
+TimeSeries.Power.HARDCOPY   = 1
+
+

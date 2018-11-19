@@ -1,0 +1,13 @@
+BlankingModelText    = 'Blanking models 28 Dec 2017'
+BlankingString{1}    = 'Point blanking'
+BlankingArcDeg(1)    = 1.0
+BlankingString{2}    = 'Space blanking'
+BlankingDistance(2)  = 2.5
+BlankingString{3}    = 'Time blanking'
+BlankingTime(3)      = 0.5
+BlankingString{4}    = 'Space OR time blanking'
+BlankingDistance(4)  = 2.5
+BlankingTime(4)      = 0.5
+BlankingString{5}    = 'Space AND time blanking'
+BlankingDistance(5)  = 2.5
+BlankingTime(5)      = 0.5
