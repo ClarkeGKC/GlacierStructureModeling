@@ -22,21 +22,17 @@ You can run any given model using the BATCH_run.dat file which calls a series of
 
 To launch a batch run select the desired model, e.g.,'Traplike_1.00Ref'  and enter BATCH_run('Traplike_1.00Ref') at the MATLAB prompt. I usually choose to do these runs as background jobs so in Linux here is how one might proceed:
 
-Inside a terminal        nice -n 20 matlab -nodesktop
-                         BATCH_run('Traplike_1.00Ref')
+Inside a terminal:        
+
+nice -n 20 matlab -nodesktop
+BATCH_run('Traplike_1.00Ref')
                          
-                         Note the BATCH_run will take several days to complete. First the forward model is run. 
-                         Particle tracking and medial moraine generation are computationally intensive 
-                         
-                         Results of bottom-up particle tracking are stored in the file UP_TRACKS.mat within the Archive-xxx
-                         subdirectory
-                         
-                         Results of top-down particle tracking are stored in the file DOWN_TRACKS.mat in the same Archive 
-                         subdirectory
+Note the BATCH_run will take several days to complete. First the forward model is run. Following completion of the forward modeling run: particle tracking and medial moraine generation are computationally intensive 
+                        
+Results of bottom-up particle tracking are stored in the file UP_TRACKS.mat within the Archive-xxx subdirectory
+Results of top-down particle tracking are stored in the file DOWN_TRACKS.mat in the same Archive-xxx subdirectory
                          
 Once the BATCH_run is completed you can BATCH process some plots using
 
-                         BATCH_plot('Traplike_1.00Ref')
+BATCH_plot('Traplike_1.00Ref')
                          
-                         
-                    
